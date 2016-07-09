@@ -1,0 +1,9 @@
+/.metadata/
+/RemoteSystemsTempFiles/
+*.o
+*.d
+*.elf
+*.lss
+*.hex
+*.map
+*.eep

@@ -1,0 +1,3 @@
+[submodule "a328P/Arduinutil"]
+	path = a328P/Arduinutil
+	url = https://github.com/djboni/arduinutil.git
