@@ -4,13 +4,16 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../Arduinutil/Data/queue.c 
+../Arduinutil/Data/queue.c \
+../Arduinutil/Data/semphr.c 
 
 OBJS += \
-./Arduinutil/Data/queue.o 
+./Arduinutil/Data/queue.o \
+./Arduinutil/Data/semphr.o 
 
 C_DEPS += \
-./Arduinutil/Data/queue.d 
+./Arduinutil/Data/queue.d \
+./Arduinutil/Data/semphr.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

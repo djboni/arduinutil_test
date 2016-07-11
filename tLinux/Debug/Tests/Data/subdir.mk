@@ -4,13 +4,16 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
-../Tests/Data/queue.cpp 
+../Tests/Data/queue.cpp \
+../Tests/Data/semphr.cpp 
 
 OBJS += \
-./Tests/Data/queue.o 
+./Tests/Data/queue.o \
+./Tests/Data/semphr.o 
 
 CPP_DEPS += \
-./Tests/Data/queue.d 
+./Tests/Data/queue.d \
+./Tests/Data/semphr.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
