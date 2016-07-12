@@ -4,14 +4,17 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
+../Tests/Data/mutex.cpp \
 ../Tests/Data/queue.cpp \
 ../Tests/Data/semphr.cpp 
 
 OBJS += \
+./Tests/Data/mutex.o \
 ./Tests/Data/queue.o \
 ./Tests/Data/semphr.o 
 
 CPP_DEPS += \
+./Tests/Data/mutex.d \
 ./Tests/Data/queue.d \
 ./Tests/Data/semphr.d 
 
