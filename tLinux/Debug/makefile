@@ -49,13 +49,19 @@ tLinux.elf: $(OBJS) $(USER_OBJS)
 	g++  -o "tLinux.elf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
+	$(MAKE) --no-print-directory post-build
 
 # Other Targets
 clean:
 	-$(RM) $(OBJS)$(C++_DEPS)$(C_DEPS)$(CC_DEPS)$(CPP_DEPS)$(EXECUTABLES)$(CXX_DEPS)$(C_UPPER_DEPS) tLinux.elf
 	-@echo ' '
 
+post-build:
+	-@echo 'Running tests...'
+	-mkdir -p test-reports; ./tLinux.elf --log_format=XML --log_level=all --report_level=short --log_sink=test-reports/report.xml || true
+	-@echo ' '
+
 .PHONY: all clean dependents
-.SECONDARY:
+.SECONDARY: post-build
 
 -include ../makefile.targets
