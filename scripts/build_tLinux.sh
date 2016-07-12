@@ -9,7 +9,7 @@ echo "Running tLinux"
 mkdir -p test-reports
 ./tLinux.elf \
         --log_format=XML \
-        --log_level=test_suite \
+        --log_level=all \
         --report_level=no \
         --log_sink=test-reports/report.xml
 
