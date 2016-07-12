@@ -38,10 +38,8 @@ a328P.lss \
 
 FLASH_IMAGE += \
 a328P.hex \
-a328P.hex \
 
 EEPROM_IMAGE += \
-a328P.eep \
 a328P.eep \
 
 SIZEDUMMY += \

@@ -4,14 +4,20 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
+../Arduinutil/Data/mailbox.c \
+../Arduinutil/Data/mutex.c \
 ../Arduinutil/Data/queue.c \
 ../Arduinutil/Data/semphr.c 
 
 OBJS += \
+./Arduinutil/Data/mailbox.o \
+./Arduinutil/Data/mutex.o \
 ./Arduinutil/Data/queue.o \
 ./Arduinutil/Data/semphr.o 
 
 C_DEPS += \
+./Arduinutil/Data/mailbox.d \
+./Arduinutil/Data/mutex.d \
 ./Arduinutil/Data/queue.d \
 ./Arduinutil/Data/semphr.d 
 
