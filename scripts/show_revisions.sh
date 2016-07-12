@@ -1,9 +1,9 @@
 echo "----------------------------------------------------------------------"
 
 echo "Workspace root"
-git rev-parse --verify HEAD;
+git log -n1 --oneline HEAD
 git submodule foreach \
-        git rev-parse --verify HEAD
+        git log -n1 --oneline HEAD
 
 echo
 echo
