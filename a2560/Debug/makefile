@@ -54,7 +54,7 @@ all: a2560.elf secondary-outputs
 a2560.elf: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: AVR C Linker'
-	avr-gcc -Wl,-Map,a2560.map -Wl,--gc-sections -mmcu=atmega2560 -o "a2560.elf" $(OBJS) $(USER_OBJS) $(LIBS)
+	avr-gcc -Wl,-Map,a2560.map -mmcu=atmega2560 -o "a2560.elf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 

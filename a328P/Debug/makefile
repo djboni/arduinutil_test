@@ -54,7 +54,7 @@ all: a328P.elf secondary-outputs
 a328P.elf: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: AVR C Linker'
-	avr-gcc -Wl,-Map,a328P.map -Wl,--gc-sections -mmcu=atmega328p -o "a328P.elf" $(OBJS) $(USER_OBJS) $(LIBS)
+	avr-gcc -Wl,-Map,a328P.map -mmcu=atmega328p -o "a328P.elf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
