@@ -232,6 +232,23 @@ BOOST_AUTO_TEST_CASE(functions_length_used_free)
     }
 }
 
+BOOST_AUTO_TEST_CASE(clear_should_empty_the_queue)
+{
+    /* Should empty the queue. */
+
+    do_fill_queue_pushback();
+
+    BOOST_CHECK_EQUAL(Queue_length(&queue), buff_length);
+    BOOST_CHECK_EQUAL(Queue_used(&queue), buff_length);
+    BOOST_CHECK_EQUAL(Queue_free(&queue), 0U);
+
+    Queue_clear(&queue);
+
+    BOOST_CHECK_EQUAL(Queue_length(&queue), buff_length);
+    BOOST_CHECK_EQUAL(Queue_used(&queue), 0U);
+    BOOST_CHECK_EQUAL(Queue_free(&queue), buff_length);
+}
+
 
 
 BOOST_AUTO_TEST_SUITE_END()
