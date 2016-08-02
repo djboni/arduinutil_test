@@ -26,7 +26,7 @@ C_DEPS += \
 Arduinutil/Data/%.o: ../Arduinutil/Data/%.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: AVR Compiler'
-	avr-gcc -I../Source -I../Arduinutil -I../Arduinutil/port/GCC_ATmega328P -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -ansi -funsigned-char -funsigned-bitfields -pedantic -Wall -Wextra -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "$@" "$<"
+	avr-gcc -I../Source -I../Arduinutil -I../Arduinutil/port/GCC_ATmega328P -g2 -gstabs -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -ansi -funsigned-char -funsigned-bitfields -pedantic -Wall -Wextra -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
