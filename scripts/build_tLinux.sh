@@ -3,6 +3,7 @@ echo "----------------------------------------------------------------------"
 echo "Building tLinux"
 cd tLinux/Debug
 
+make clean
 make all
 
 mkdir -p test-reports
