@@ -35,6 +35,8 @@
 								<option id="gnu.c.compiler.option.preprocessor.def.symbols.1723114636" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" useByScannerDiscovery="false" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="__MSP430G2553__"/>
 								</option>
+								<option id="gnu.c.compiler.option.warnings.toerrors.671171419" name="Warnings as errors (-Werror)" superClass="gnu.c.compiler.option.warnings.toerrors" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								<option id="gnu.c.compiler.option.warnings.pedantic.error.396433785" superClass="gnu.c.compiler.option.warnings.pedantic.error" value="true" valueType="boolean"/>
 								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.413938388" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
 							</tool>
 							<tool id="cdt.managedbuild.tool.gnu.cross.cpp.compiler.477765380" name="Cross G++ Compiler" superClass="cdt.managedbuild.tool.gnu.cross.cpp.compiler">
@@ -43,6 +45,10 @@
 							</tool>
 							<tool id="cdt.managedbuild.tool.gnu.cross.c.linker.1798240406" name="Cross GCC Linker" superClass="cdt.managedbuild.tool.gnu.cross.c.linker">
 								<option id="gnu.c.link.option.ldflags.1319147334" name="Linker flags" superClass="gnu.c.link.option.ldflags" value="-mmcu=msp430g2553" valueType="string"/>
+								<option id="gnu.c.link.option.libs.1485012548" name="Libraries (-l)" superClass="gnu.c.link.option.libs" valueType="libs">
+									<listOptionValue builtIn="false" value="m"/>
+									<listOptionValue builtIn="false" value="m"/>
+								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.1986570280" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
