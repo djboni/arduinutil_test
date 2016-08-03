@@ -33,10 +33,11 @@
 								<option id="gnu.c.compiler.option.warnings.extrawarn.754614986" name="Extra warnings (-Wextra)" superClass="gnu.c.compiler.option.warnings.extrawarn" useByScannerDiscovery="false" value="true" valueType="boolean"/>
 								<option id="gnu.c.compiler.option.warnings.pedantic.2014177560" name="Pedantic (-pedantic)" superClass="gnu.c.compiler.option.warnings.pedantic" useByScannerDiscovery="false" value="true" valueType="boolean"/>
 								<option id="gnu.c.compiler.option.preprocessor.def.symbols.1723114636" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" useByScannerDiscovery="false" valueType="definedSymbols">
-									<listOptionValue builtIn="false" value="__MSP430G2553__"/>
+									<listOptionValue builtIn="false" value="F_CPU=1000000UL"/>
 								</option>
 								<option id="gnu.c.compiler.option.warnings.toerrors.671171419" name="Warnings as errors (-Werror)" superClass="gnu.c.compiler.option.warnings.toerrors" useByScannerDiscovery="false" value="true" valueType="boolean"/>
-								<option id="gnu.c.compiler.option.warnings.pedantic.error.396433785" superClass="gnu.c.compiler.option.warnings.pedantic.error" value="true" valueType="boolean"/>
+								<option id="gnu.c.compiler.option.warnings.pedantic.error.396433785" name="Pedantic warnings as errors (-pedantic-errors)" superClass="gnu.c.compiler.option.warnings.pedantic.error" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								<option id="gnu.c.compiler.option.misc.other.1893360095" name="Other flags" superClass="gnu.c.compiler.option.misc.other" useByScannerDiscovery="false" value="-mmcu=msp430g2553 -c -fmessage-length=0" valueType="string"/>
 								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.413938388" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
 							</tool>
 							<tool id="cdt.managedbuild.tool.gnu.cross.cpp.compiler.477765380" name="Cross G++ Compiler" superClass="cdt.managedbuild.tool.gnu.cross.cpp.compiler">
