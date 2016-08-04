@@ -4,16 +4,19 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
+../Arduinutil/port/GCC_MSP430G2553/Analog.c \
 ../Arduinutil/port/GCC_MSP430G2553/Arduinutil.c \
 ../Arduinutil/port/GCC_MSP430G2553/Digital.c \
 ../Arduinutil/port/GCC_MSP430G2553/Serial.c 
 
 OBJS += \
+./Arduinutil/port/GCC_MSP430G2553/Analog.o \
 ./Arduinutil/port/GCC_MSP430G2553/Arduinutil.o \
 ./Arduinutil/port/GCC_MSP430G2553/Digital.o \
 ./Arduinutil/port/GCC_MSP430G2553/Serial.o 
 
 C_DEPS += \
+./Arduinutil/port/GCC_MSP430G2553/Analog.d \
 ./Arduinutil/port/GCC_MSP430G2553/Arduinutil.d \
 ./Arduinutil/port/GCC_MSP430G2553/Digital.d \
 ./Arduinutil/port/GCC_MSP430G2553/Serial.d 

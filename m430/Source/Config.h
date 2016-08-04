@@ -39,7 +39,7 @@ extern "C" {
 #define SERIAL_RBUFSZ                16U
 #define SERIAL_TBUFSZ                16U
 
-#define ANALOG_ENABLE                0
+#define ANALOG_ENABLE                1
 
 #define DIGITAL_ATTACH_INT_ENABLE    1
 
