@@ -10,6 +10,7 @@ RM := rm -rf
 -include sources.mk
 -include Source/subdir.mk
 -include Arduinutil/port/GCC_ATmega328P/subdir.mk
+-include Arduinutil/Misc/subdir.mk
 -include Arduinutil/Data/subdir.mk
 -include subdir.mk
 -include objects.mk
