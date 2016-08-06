@@ -7,12 +7,12 @@ sudo=`which sudo`
 ################################################################################
 
 $sudo apt-get update
-
 $sudo apt-get install \
         openssh-server \
         git vim \
         make gcc g++ \
-        gcc-avr avr-libc
+        gcc-avr avr-libc \
+        gcc-msp430 msp430-libc
 
 
 ################################################################################
@@ -23,6 +23,4 @@ wget -q -O- http://pkg.jenkins.io/debian-stable/jenkins.io.key | $sudo apt-key a
 echo 'deb http://pkg.jenkins.io/debian-stable binary/' | $sudo tee /etc/apt/sources.list.d/jenkins.list
 
 $sudo apt-get update
-
-$sudo apt-get install \
-        jenkins
+$sudo apt-get install jenkins
