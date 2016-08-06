@@ -23,9 +23,11 @@ BOOST_AUTO_TEST_CASE(ul2str_should_work)
     const uint8_t size = 10;
     char str[size];
     const uint8_t base = 10;
-    uint32_t value = 0;
+    uint32_t value;
+    char *ptr;
 
-    char *ptr = conv_ul2str(str, size, value, base);
+    value = 0;
+    ptr = conv_ul2str(str, size, value, base);
 
     BOOST_CHECK_EQUAL(ptr, &str[size - 2U]);
     BOOST_CHECK_EQUAL(strcmp(ptr, "0"), 0);
@@ -53,6 +55,40 @@ BOOST_AUTO_TEST_CASE(ul2str_should_work)
 
     BOOST_CHECK_EQUAL(ptr, &str[size - 10U]);
     BOOST_CHECK_EQUAL(strcmp(ptr, "987654321"), 0);
+}
+
+BOOST_AUTO_TEST_CASE(fillstr_should_work)
+{
+    const uint8_t size = 10;
+    char str[size];
+    const uint8_t base = 16;
+    uint32_t value;
+    char *ptr;
+
+    value = 0x3FF;
+    ptr = conv_ul2str(str, size, value, base);
+
+    BOOST_CHECK_EQUAL(ptr, &str[size - 4U]);
+    BOOST_CHECK_EQUAL(strcmp(ptr, "3FF"), 0);
+
+    char *ptr2;
+    ptr2 = conv_fillstr(ptr, 4, '0');
+
+    BOOST_CHECK_EQUAL(ptr2, &str[size - 5U]);
+    BOOST_CHECK_EQUAL(strcmp(ptr2, "03FF"), 0);
+
+    char *ptr3;
+    ptr3 = conv_fillstr(ptr, 3, '0');
+
+    BOOST_CHECK_EQUAL(ptr3, &str[size - 4U]);
+    BOOST_CHECK_EQUAL(strcmp(ptr3, "3FF"), 0);
+
+    char *ptr4;
+    ptr = &str[size - 1U];
+    ptr4 = conv_fillstr(ptr, 4, '0');
+
+    BOOST_CHECK_EQUAL(ptr4, &str[size - 5U]);
+    BOOST_CHECK_EQUAL(strcmp(ptr4, "0000"), 0);
 }
 
 BOOST_AUTO_TEST_SUITE_END()
