@@ -40,6 +40,13 @@ extern "C" {
 #define SERIAL_TBUFSZ                64U
 #define SERIAL_PRINT_BUFSZ           32U
 
+#define I2C_ENABLE                   1
+#define I2C_PRESCALER                64U
+
+#define WATCHDOG_ENABLE              1
+#define WATCHDOG_AUTOINIT            1
+#define WATCHDOG_AUTOINIT_TIMEOUT    15U
+
 #define TIMER_ENABLE                 1
 #define TIMER_PRESCALER              1024U
 
