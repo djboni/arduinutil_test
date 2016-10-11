@@ -13,8 +13,8 @@ EXECUTABLES :=
 
 # Every subdirectory with source files must be described here
 SUBDIRS := \
-Arduinutil/Data \
-Arduinutil/Misc \
-Arduinutil/port/GCC_MSP430G2553 \
 Source \
+Arduinutil/port/GCC_MSP430G2553 \
+Arduinutil/Misc \
+Arduinutil/Data \
 

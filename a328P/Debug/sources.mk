@@ -21,8 +21,8 @@ S_UPPER_DEPS :=
 
 # Every subdirectory with source files must be described here
 SUBDIRS := \
-Arduinutil/Data \
-Arduinutil/Misc \
-Arduinutil/port/GCC_ATmega328P \
 Source \
+Arduinutil/port/GCC_ATmega328P \
+Arduinutil/Misc \
+Arduinutil/Data \
 

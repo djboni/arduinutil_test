@@ -23,9 +23,9 @@ C_UPPER_DEPS :=
 
 # Every subdirectory with source files must be described here
 SUBDIRS := \
-Arduinutil/Data \
-Arduinutil/Misc \
-Tests/Data \
-Tests/Misc \
 Tests \
+Tests/Misc \
+Tests/Data \
+Arduinutil/Misc \
+Arduinutil/Data \
 

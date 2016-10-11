@@ -32,12 +32,13 @@
 									<listOptionValue builtIn="false" value="../../a328P/Arduinutil"/>
 									<listOptionValue builtIn="false" value="../../a328P/Arduinutil/port/GCC_Linux"/>
 								</option>
-								<option id="gnu.cpp.compiler.option.dialect.std.974676640" name="Language standard" superClass="gnu.cpp.compiler.option.dialect.std" value="gnu.cpp.compiler.dialect.c++98" valueType="enumerated"/>
-								<option id="gnu.cpp.compiler.option.dialect.flags.225867701" name="Other dialect flags" superClass="gnu.cpp.compiler.option.dialect.flags" value="-ansi" valueType="string"/>
+								<option id="gnu.cpp.compiler.option.dialect.std.974676640" name="Language standard" superClass="gnu.cpp.compiler.option.dialect.std" value="gnu.cpp.compiler.dialect.default" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.dialect.flags.225867701" name="Other dialect flags" superClass="gnu.cpp.compiler.option.dialect.flags" value="-ansi -std=c++11" valueType="string"/>
 								<option id="gnu.cpp.compiler.option.warnings.pedantic.1789031537" name="Pedantic (-pedantic)" superClass="gnu.cpp.compiler.option.warnings.pedantic" value="true" valueType="boolean"/>
 								<option id="gnu.cpp.compiler.option.warnings.extrawarn.1850152740" name="Extra warnings (-Wextra)" superClass="gnu.cpp.compiler.option.warnings.extrawarn" value="true" valueType="boolean"/>
 								<option id="gnu.cpp.compiler.option.warnings.toerrors.563190785" name="Warnings as errors (-Werror)" superClass="gnu.cpp.compiler.option.warnings.toerrors" value="true" valueType="boolean"/>
 								<option id="gnu.cpp.compiler.option.warnings.pedantic.error.1557898121" name="Pedantic warnings as errors (-pedantic-errors)" superClass="gnu.cpp.compiler.option.warnings.pedantic.error" value="true" valueType="boolean"/>
+								<option id="gnu.cpp.compiler.option.preprocessor.def.1422432895" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" valueType="definedSymbols"/>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1803510899" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
 							</tool>
 							<tool id="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.1266835320" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.exe.debug">
@@ -53,6 +54,9 @@
 								<option id="gnu.c.compiler.option.warnings.extrawarn.411924314" name="Extra warnings (-Wextra)" superClass="gnu.c.compiler.option.warnings.extrawarn" value="true" valueType="boolean"/>
 								<option id="gnu.c.compiler.option.dialect.std.170290605" name="Language standard" superClass="gnu.c.compiler.option.dialect.std" value="gnu.c.compiler.dialect.c90" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.dialect.flags.51378748" name="Other dialect flags" superClass="gnu.c.compiler.option.dialect.flags" value="-ansi" valueType="string"/>
+								<option id="gnu.c.compiler.option.preprocessor.def.symbols.911559970" superClass="gnu.c.compiler.option.preprocessor.def.symbols" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="hexdump_write=puts"/>
+								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1978616827" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
 							</tool>
 							<tool id="cdt.managedbuild.tool.gnu.c.linker.exe.debug.2076050356" name="GCC C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.exe.debug"/>

@@ -6,7 +6,7 @@ struct MutexFixture {
 
     struct Mutex_t mutex;
 
-    MutexFixture() {
+    MutexFixture(): mutex({ {0, 0} }) {
         Mutex_init(&mutex);
     }
     ~MutexFixture() {

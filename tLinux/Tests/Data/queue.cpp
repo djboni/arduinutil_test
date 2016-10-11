@@ -13,7 +13,7 @@ struct QueueFixture {
     struct Queue_t queue;
     Type buff[buff_total];
 
-    QueueFixture() {
+    QueueFixture(): queue({0, 0, 0, 0, 0, 0, 0, 0, 0}) {
         memset(&buff[0U], 0x5A, buff_total * sizeof(Type));
         Queue_init(&queue, &buff[1U], buff_length, sizeof(Type));
     }

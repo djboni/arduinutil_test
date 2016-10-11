@@ -8,7 +8,7 @@ struct SemaphoreFixture {
 
     struct Semaphore_t semaphore;
 
-    SemaphoreFixture() {
+    SemaphoreFixture(): semaphore({0, 0}) {
         Semaphore_init(&semaphore, count);
     }
     ~SemaphoreFixture() {
