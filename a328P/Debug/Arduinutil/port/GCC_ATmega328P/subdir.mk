@@ -8,6 +8,7 @@ C_SRCS += \
 ../Arduinutil/port/GCC_ATmega328P/Arduinutil.c \
 ../Arduinutil/port/GCC_ATmega328P/Digital.c \
 ../Arduinutil/port/GCC_ATmega328P/I2c.c \
+../Arduinutil/port/GCC_ATmega328P/Pwm.c \
 ../Arduinutil/port/GCC_ATmega328P/Serial.c \
 ../Arduinutil/port/GCC_ATmega328P/Timer.c \
 ../Arduinutil/port/GCC_ATmega328P/Watchdog.c 
@@ -17,6 +18,7 @@ OBJS += \
 ./Arduinutil/port/GCC_ATmega328P/Arduinutil.o \
 ./Arduinutil/port/GCC_ATmega328P/Digital.o \
 ./Arduinutil/port/GCC_ATmega328P/I2c.o \
+./Arduinutil/port/GCC_ATmega328P/Pwm.o \
 ./Arduinutil/port/GCC_ATmega328P/Serial.o \
 ./Arduinutil/port/GCC_ATmega328P/Timer.o \
 ./Arduinutil/port/GCC_ATmega328P/Watchdog.o 
@@ -26,6 +28,7 @@ C_DEPS += \
 ./Arduinutil/port/GCC_ATmega328P/Arduinutil.d \
 ./Arduinutil/port/GCC_ATmega328P/Digital.d \
 ./Arduinutil/port/GCC_ATmega328P/I2c.d \
+./Arduinutil/port/GCC_ATmega328P/Pwm.d \
 ./Arduinutil/port/GCC_ATmega328P/Serial.d \
 ./Arduinutil/port/GCC_ATmega328P/Timer.d \
 ./Arduinutil/port/GCC_ATmega328P/Watchdog.d 

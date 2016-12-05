@@ -8,6 +8,7 @@ C_SRCS += \
 ../Arduinutil/port/GCC_ATmega2560/Arduinutil.c \
 ../Arduinutil/port/GCC_ATmega2560/Digital.c \
 ../Arduinutil/port/GCC_ATmega2560/I2c.c \
+../Arduinutil/port/GCC_ATmega2560/Pwm.c \
 ../Arduinutil/port/GCC_ATmega2560/Serial.c \
 ../Arduinutil/port/GCC_ATmega2560/Serial1.c \
 ../Arduinutil/port/GCC_ATmega2560/Serial2.c \
@@ -20,6 +21,7 @@ OBJS += \
 ./Arduinutil/port/GCC_ATmega2560/Arduinutil.o \
 ./Arduinutil/port/GCC_ATmega2560/Digital.o \
 ./Arduinutil/port/GCC_ATmega2560/I2c.o \
+./Arduinutil/port/GCC_ATmega2560/Pwm.o \
 ./Arduinutil/port/GCC_ATmega2560/Serial.o \
 ./Arduinutil/port/GCC_ATmega2560/Serial1.o \
 ./Arduinutil/port/GCC_ATmega2560/Serial2.o \
@@ -32,6 +34,7 @@ C_DEPS += \
 ./Arduinutil/port/GCC_ATmega2560/Arduinutil.d \
 ./Arduinutil/port/GCC_ATmega2560/Digital.d \
 ./Arduinutil/port/GCC_ATmega2560/I2c.d \
+./Arduinutil/port/GCC_ATmega2560/Pwm.d \
 ./Arduinutil/port/GCC_ATmega2560/Serial.d \
 ./Arduinutil/port/GCC_ATmega2560/Serial1.d \
 ./Arduinutil/port/GCC_ATmega2560/Serial2.d \
